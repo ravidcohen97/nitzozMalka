@@ -1,0 +1,117 @@
+main {
+  margin-top: 110px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 110px;
+}
+.navbar-nav {
+  background-color: #fff;
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+  /* border: #96090e solid 2px; */
+  border-radius: 25px;
+}
+.marginBox {
+  height: 110px;
+}
+.flex {
+  margin: 0 auto;
+  direction: rtl;
+  width: 80%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box1 {
+  padding: 0;
+  max-width: 450px;
+  width: 100%;
+  height: 250px;
+  margin: 10px;
+  border: #96090e 2px solid;
+  /* background-color: rgba(218, 218, 218, 0.459); */
+  border-radius: 30px;
+  overflow: auto auto;
+}
+.box1:hover {
+  box-shadow: #96090e 2px 2px;
+}
+.box1 h3 {
+  margin: 15px 0;
+  color: #96090e;
+}
+.gallery {
+  text-align: center;
+}
+h2 {
+  margin: 15px 0;
+  color: #96090e;
+  font-size: 3em;
+}
+.flex div p {
+  margin: 15px auto;
+  width: 80%;
+  font-size: 1.1rem;
+}
+.home h1 {
+  font-size: 4em;
+}
+.contacts iframe {
+  margin-top: 50px;
+}
+.contacts {
+  direction: rtl;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contacts div {
+  margin: 10px 80px;
+}
+
+.ril-toolbar {
+  margin-top: 110px;
+}
+.bgc {
+  position: absolute;
+  width: 100%;
+  min-height: 90vh;
+  padding-bottom: 50px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(26, 26, 26),
+    #96090e,
+    #96090e,
+    #e70008,
+    #ff0008,
+    white
+  );
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-nav {
+    background-color: #fff;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    border: #96090e solid 2px;
+    border-radius: 25px;
+  }
+  .nav-link {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 780px) {
+}
+@media screen and (max-width: 650px) {
+}

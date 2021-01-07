@@ -1,0 +1,34 @@
+.login {
+  max-width: 300px;
+  width: 100%;
+  margin: 15% auto;
+  border: solid 5px black;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 5px 10px white;
+  border-radius: 25px;
+}
+.login label {
+  margin: 10px;
+  max-width: 250px;
+  width: 100%;
+}
+.login input {
+  margin: 10px;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+}
+.login h1 {
+  color: #96090e;
+}
+.login button {
+  width: 100px;
+  margin: 10px;
+  background-color: #96090e;
+}
+.login a {
+  width: 100px;
+  margin: 10px;
+  /* background-color: #96090e; */
+}

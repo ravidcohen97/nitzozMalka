@@ -1,0 +1,13 @@
+.myUser {
+  width: 100%;
+  max-width: 600px;
+  height: 40vh;
+  margin: 10% auto;
+  text-align: center;
+  background-color: white;
+  padding: 5px 20px;
+}
+
+.myUser h3 {
+  margin-bottom: 30px;
+}

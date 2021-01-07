@@ -1,0 +1,212 @@
+@local=http://localhost:8181
+# @token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZWUzMGMxOTdjZTc3NGE3YzRmODVkNiIsIm5hbWUiOiJ1c2VyIiwiYWRtaW4iOmZhbHNlLCJpYXQiOjE2MDk1MTU1NDl9.Pe5SkIcSIi8lfnLTK3wQ_ffXYWmw_ufwNSMOYQMkh0U
+
+# ************* Admin Token  ******************
+@token= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZWUwZGI3YzU3NjE4Mzc0MDNiMTE4ZSIsIm5hbWUiOiJMaWVsIENvaGVuIiwiYWRtaW4iOnRydWUsImlhdCI6MTYwOTQzODYyOX0.MY-2FNHPIAFQUrdEZPB5jqKve-qUCQgJk1VSlKAfce8
+
+
+
+# /////////////////////////////////////////////////////////////
+# register user
+# ////////////////////////////////////////////////////////////
+
+# POST {{local}}/users
+# Content-Type: application/json
+
+# {
+#     "name": "user",
+#     "email": "user5@gmail.com",
+#     "password": "123456"
+# }
+# ////////////////////////////////////////////////////////////
+
+
+# //////////////////////////////////////////////////////////
+# login user
+# //////////////////////////////////////////////////////////
+
+# POST {{local}}/auth
+# Content-Type: application/json
+
+
+# {
+#     "email": "user1@gmail.com",
+#     "password": "123456"
+# }
+
+# //////////////////////////////////////////////////////////////////
+
+
+# /////////////////////////////////////////////////////////////
+# get my user
+# ///////////////////////////////////////////////////////////
+
+# GET {{local}}/users/me
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+
+# {
+#     "_id": "5fee30c197ce774a7c4f85d6"
+    
+# }
+
+# /////////////////////////////////////////////////////////////////
+
+
+
+# //////////////////////////////////////////////////////////////
+# get all users/ admin only
+# /////////////////////////////////////////////////////////////
+
+# GET {{local}}/users/all
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+# ///////////////////////////////////////////////////////////////
+
+
+
+# /////////////////////////////////////////////////////////////////
+# delete my user
+# /////////////////////////////////////////////////////////////////
+
+# DELETE {{local}}/users/delete
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+
+# {
+#     "_id": "5fee30be97ce774a7c4f85d5"
+    
+# }
+
+
+# /////////////////////////////////////////////////////////////////
+# post new card
+# /////////////////////////////////////////////////////////////////
+
+# POST {{local}}/cards/new
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+# {
+#     "name":"shisadsasdsaasdmi",
+#     "color":"בssss adsfasdf550",
+#     "size":"adsfasdfasdfasdf",
+#     "description":"משהו asdfasdfשהו",
+#     "user_id":"5fee30c197ce774a7c4f85d6",
+#     "status":0
+    
+    
+# }
+
+# /////////////////////////////////////////////////////////////////
+# update card
+# /////////////////////////////////////////////////////////////////
+
+# PATCH {{local}}/cards/update
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+# {
+#     "name":"shimi ",
+#     "color":"בסיס 450, עליון 550",
+#     "size":"450טון",
+#     "description":"משהו משהו משהו משהו",
+#     "user_id":"5fee0db7c5761837403b118e",
+#     "_id":"5fef458625b97128705b9eea",
+#     "status":3
+# }
+
+# /////////////////////////////////////////////////////////////////
+# delete my card
+# /////////////////////////////////////////////////////////////////
+# DELETE {{local}}/cards/delete
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+# {
+# "_id": "5fef46afea28644118447307",
+# "user_id": "5fee30c197ce774a7c4f85d6"
+# }
+
+# /////////////////////////////////////////////////////////////////
+# get my cards
+# /////////////////////////////////////////////////////////////////
+
+
+# GET {{local}}/cards/my
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+# {
+#     "_id": "5fee0db7c5761837403b118e"
+# }
+
+# /////////////////////////////////////////////////////////////////
+# get all cards
+# /////////////////////////////////////////////////////////////////
+
+# GET {{local}}/cards
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+# /////////////////////////////////////////////////////////////////
+# post new todo
+# /////////////////////////////////////////////////////////////////
+
+POST {{local}}/todos/new
+Content-Type: application/json
+x-auth-token: {{token}}
+
+{"title":"ssss",
+"description":"sssss"}
+
+
+# /////////////////////////////////////////////////////////////////
+# delete todo by id
+# /////////////////////////////////////////////////////////////////
+
+# DELETE {{local}}/todos/delete
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+# {"_id":"5fef525f9832094b5c264d22"}
+
+# /////////////////////////////////////////////////////////////////
+# get todos
+# /////////////////////////////////////////////////////////////////
+
+# GET {{local}}/todos
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+# /////////////////////////////////////////////////////////////////
+# get favorite todos
+# /////////////////////////////////////////////////////////////////
+# GET {{local}}/todos/favorite
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+
+# /////////////////////////////////////////////////////////////////
+# update todos
+# # /////////////////////////////////////////////////////////////////
+
+# PATCH  {{local}}/todos/update
+# Content-Type: application/json
+# x-auth-token: {{token}}
+
+#  {
+#      "title":"the king",
+#      "description":"ravid",
+#      "_id":"5fef52b5edf8ae4148b7c4da",
+#      "favorite":true
+#  }
+
+# GET  {{local}}/cards/5fef458625b97128705b9eea
+# Content-Type: application/json
+
+
+ 
