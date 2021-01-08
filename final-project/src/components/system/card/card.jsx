@@ -24,7 +24,7 @@ class Card extends Component {
         <h3 style={{ width: "100%", color: "#96090e" }}>
           שם לקוח - {card.name}
         </h3>
-        <h5 style={{ width: "100%" }}>תיאור- {card.descrition} </h5>
+        <h5 style={{ width: "100%" }}>תיאור- {card.description} </h5>
         <h5 style={{ width: "100%" }}>מפרט צבע- {card.color} </h5>
         <h5 style={{ width: "100%" }}>גודל-{card.size} </h5>
         {card.status === 0 && (
